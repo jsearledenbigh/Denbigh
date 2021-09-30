@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-front-of-denbigh-high-school">
+        <li class="text">Front of Denbigh High School</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-student-entrance">
+        <li class="text">Student Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-reception">
+        <li class="text">Reception</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-main-hall">
+        <li class="text">Main Hall</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-girls-toilet">
+        <li class="text">Girls Toilet</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-mathematics">
+        <li class="text">Mathematics</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-languages">
+        <li class="text">Languages</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-languages-quad">
+        <li class="text">Languages Quad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-sports-hall-entrance">
+        <li class="text">Sports Hall Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-sports-hall">
+        <li class="text">Sports Hall</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-dance-studio">
+        <li class="text">Dance Studio</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-netball-courts">
+        <li class="text">Netball Courts</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-main-field">
+        <li class="text">Main Field</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-mac-suite">
+        <li class="text">Mac Suite</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-boys-toilet">
+        <li class="text">Boys Toilet</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-english">
+        <li class="text">English</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-the-school-library">
+        <li class="text">The School Library</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-computer-science">
+        <li class="text">Computer Science</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-swimming-pool-quad-and-arches">
+        <li class="text">Swimming Pool Quad and Arches</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-swimming-pool-foyer">
+        <li class="text">Swimming Pool Foyer</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-support-for-learning-department">
+        <li class="text">Support for Learning Department</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-science-lab">
+        <li class="text">Science Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-the-school-canteen">
+        <li class="text">The School Canteen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-d-block-entrance">
+        <li class="text">D Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-food-and-nutrition">
+        <li class="text">Food and Nutrition</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-drama">
+        <li class="text">Drama</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-canopy">
+        <li class="text">Canopy</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-art">
+        <li class="text">Art</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-gymnasium">
+        <li class="text">Gymnasium</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-fitness-suite">
+        <li class="text">Fitness Suite</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-the-lodge-n-block-and-back-gate">
+        <li class="text">The Lodge, N Block and Back Gate</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
